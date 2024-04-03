@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" type="image/icon" href="images/favicon.PNG">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'/>
+</head>
+<body>
+    <header class="header">
+        <a  href="#" class="logo"><i class="fa fa-shopping-basket" ></i>KP STORES</a>
+    
+    <nav class="navbar">
+        <ul >
+        <li><a href="#home">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#product">Product</a></li>
+        <li><a href="#categories">Categories <i class="fa fa-caret-down"></i></a>
+            <ul class="dropdown">
+                <li><a href="#">fruits</a></li>
+                <li><a href="#">vegetables</a></li>
+                <li><a href="#">fishes</a></li>
+                <li><a href="#">meats</a></li>
+                <li><a href="#">pickels</a></li>
+                <li><a href="#">dairy-products</a></li>
+                <li><a href="#">handicrafts</a></li>
+                <li><a href="#">foods</a></li>
+                
+            </ul>
+
+        </li>
+        
+        </ul>
+    
+    </nav>
+    <div class="icon">
+        <div class="fa fa-search" id="search-btn"></div>
+        <div class='bx bx-shopping-bag add-cart' id="cart-btn"></div>
+        <div class="fa fa-user" id="account-btn"></div>
+
+    </div>
+    <form class="search-form">
+        <input type="search" id="search-box"   placeholder="search here.........">
+        <label for="search-box"  class="fa fa-search"></label>
+    </form>
+
+    
+    <div class="shopping-cart">
+        <div class="cart">
+        <h2 class="cart-title">Your cart</h2>
+        <div class="cart-content">
+            
+        </div>
+        <div class="total">
+            <div class="total-title">total</div>
+            <div class="total-price">rs0</div>
+        </div>
+
+        <button type="button" class="btn">buy now</button>
+
+        
+        </div>
+    </div>
+    
+
+
+
+    <form action="#" class="login-form" onsubmit="return validateForm()">
+        <h3>LOGIN NOW</h3>
+        <input type="email" id="email" placeholder="enter your email" class="box">
+        <div id="emailError" class="error-message"></div>
+        <input type="password" id="password" placeholder="enter your password" class="box">
+        <p>Forgot your password <a href="#">Click Here</a> </p>
+        <p>Don't Have An Account <a href="#">Create Account</a> </p>
+        <a href="dashboard.html" class="btn">login now</a>
+    </form>
+
+    
+
+
+
+</header>
+    <!--content-->
+    <section class="home" id="home">
+        <div class="content">
+        <h3>Fresh And <span>Organic</span> Products For You</h3>
+        <a href="#" class="btn">Shop Now</a>
+        </div>
+    </section>
+    <!--content-->
+    
+    <!-- feature section-->
+    <section class="features" id="features">
+        <h1 class="heading">our <span>features</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="images/feature-img-1.png">
+                <h3>fresh and organic</h3>
+                <p>"Experience the essence of nature at our online store,where freshness meets organics in every click."</p>
+                
+            </div>
+
+            <div class="box">
+                <img src="images/feature-img-2.png">
+                <h3>free delivery</h3>
+                <p>Enjoy the luxury of free delivery on all your favorites!</p>
+                
+            </div>
+
+            <div class="box">
+                <img src="images/feature-img-3.png">
+                <h3>easy payments system</h3>
+                <p>Experience the ultimate convenience with our mobile banking-integrated payment system.</p>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- feature section-->
+
+
+
+
+    <!--product section-->
+    <section class="product" id="product">
+    <h1 class="heading">our <span>Products</span></h1>
+    <div class="product-container">
+    <div class="box" data-name="p-6">
+        <img src="images/pear.png " alt="" class="product-img">
+        <h1  class="product-title">fresh pear</h1>
+        <div class="price">rs3</div>
+        <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half"></i>
+
+        </div>
+        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <i class='bx bx-shopping-bag add-cart'></i>
+    </div>
+
+
+
+
+
+
+            <div class="box" data-name="p-6">
+                <img src="images/avacado.png " alt="" class="product-img">
+                <h1  class="product-title">fresh avocado</h1>
+                <div class="price">rs3</div>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+
+                </div>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div> 
+
+
+            <div class="box" data-name="p-6">
+                <img src="images/meat.png " alt="" class="product-img">
+                <h1  class="product-title">fresh meat</h1>
+                <div class="price">rs3</div>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+        
+                </div>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+
+            <div class="box" data-name="p-6">
+                <img src="images/honey.png " alt="" class="product-img">
+                <h1  class="product-title">fresh honey</h1>
+                <div class="price">rs3</div>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+        
+                </div>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+
+
+            <div class="box" data-name="p-6">
+                <img src="images/watermelon.png " alt="" class="product-img">
+                <h1  class="product-title">fresh watermelon</h1>
+                <div class="price">rs3</div>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+        
+                </div>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+
+            <div class="box" data-name="p-6">
+                <img src="images/basket.png " alt="" class="product-img">
+                <h1  class="product-title">fresh basket</h1>
+                <div class="price">rs3</div>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+        
+                </div>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+
+            
+            <div class="box" data-name="p-6">
+                <img src="images/carrot.png " alt="" class="product-img">
+                <h1  class="product-title">fresh carrot</h1>
+                <div class="price">rs3</div>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+        
+                </div>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+
+            
+            <div class="box" data-name="p-6">
+                <img src="images/chicken.png " alt="" class="product-img">
+                <h1  class="product-title">fresh chicken</h1>
+                <div class="price">rs3</div>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+        
+                </div>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+
+            
+            <div class="box" data-name="p-6">
+                <img src="images/banana.png " alt="" class="product-img">
+                <h1  class="product-title">fresh banana</h1>
+                <div class="price">rs3</div>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+        
+                </div>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+
+            
+            <div class="box" data-name="p-6">
+                <img src="images/brownbeans.png" alt="" class="product-img">
+                <h1  class="product-title">fresh brownbeans</h1>
+                <div class="price">rs3</div>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+        
+                </div>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+        
+
+
+
+    </div>
+
+
+    </section>
+
+    <!--product section-->
+
+
+    <!--footer-->
+    <div class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>KP-S <i class="fa fa-shopping-basket"></i></h3>
+                <p>Feel Free To Contact Us On Our Social Media Handlers</p>
+                <div class="share">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-whatsapp"></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>Contact us </h3>
+                <a href="#" class="links"> <i class="fa fa-phone"></i> +977 9868211764</a>
+                <a href="#" class="links"> <i class="fa fa-envelope"></i> jshh@gmail.com</a>
+                <a href="#" class="links"> <i class="fa fa-map-marker"></i> Nepalgunj, Banke </a>
+            </div>
+        </div>
+        <div class="credit">Created By <span>MMC </span>/ All Rights Reserved</div>
+    </div>
+
+    <!--footer-->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
